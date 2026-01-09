@@ -11,7 +11,7 @@ export const getAIAdvisorResponse = async (businessNeeds: string): Promise<AICon
       model: "gemini-3-flash-preview",
       contents: `User business needs: ${businessNeeds}`,
       config: {
-        systemInstruction: "You are an expert Talent and Infrastructure Strategist for NexusHire. Based on the user's business needs, provide a structured recommendation, a 3-step growth roadmap, and key benefits of using NexusHire services (Recruitment, EOR, Cloud, or Dev Support). Keep it professional, encouraging, and concise.",
+        systemInstruction: "You are an expert Talent and Infrastructure Strategist for SharpTip. Based on the user's business needs, provide a structured recommendation, a 3-step growth roadmap, and key benefits of using SharpTip services (Recruitment, EOR, Cloud, or Dev Support). Keep it professional, encouraging, and concise.",
         responseMimeType: "application/json",
         responseSchema: {
           type: Type.OBJECT,
@@ -38,7 +38,7 @@ export const getAIAdvisorResponse = async (businessNeeds: string): Promise<AICon
   } catch (error) {
     console.error("AI Consultation Error:", error);
     return {
-      recommendation: "Our team of experts will analyze your needs specifically. NexusHire specializes in global scaling and cloud efficiency.",
+      recommendation: "Our team of experts will analyze your needs specifically. SharpTip specializes in global scaling and cloud efficiency.",
       roadmap: ["Schedule a discovery call", "Analyze infrastructure requirements", "Begin talent matching"],
       keyBenefits: ["Faster time-to-market", "Lower compliance risk", "Scalable engineering resources"]
     };

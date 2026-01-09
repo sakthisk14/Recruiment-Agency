@@ -6,7 +6,9 @@ export interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   image?: string;
+  secondaryImage?: string;
   features?: string[];
+  featureDescriptions?: string[]; // Added to match reference image detail level
   color?: string;
   delay?: number;
 }
